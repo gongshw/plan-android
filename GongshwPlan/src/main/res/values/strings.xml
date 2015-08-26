@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">每日计划</string>
+	<string name="add_plan_hint">快速添加一个计划</string>
+	<string name="start_now">立即开始计划</string>
+	<string name="loading_text">正在加载…</string>
+	<string name="active_plans">活动的计划</string>
+	<string name="day_plans">每日计划</string>
+	<string name="week_plans">每周计划</string>
+	<string name="month_plans">每月计划</string>
+	<string name="delete">删除</string>
+	<string name="circle">●</string>
+	<string name="once_a_day">每天一次</string>
+	<string name="once_a_week">每周一次</string>
+	<string name="once_a_month">每月一次</string>
+	<string name="move_up">上移</string>
+	<string name="move_down">下移</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.gongshw.plan.android.widget.VirtualKeyboardMeasureLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/virtual_keyboard_measure_layout"
+		android:theme="@style/AppTheme"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	<Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="?android:attr/actionBarSize"
+			android:background="?android:attr/colorPrimary"
+			>
+	</Toolbar>
+	<android.support.v4.widget.DrawerLayout
+			android:id="@+id/left_drawer_layout"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent">
+		<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			<com.gongshw.plan.android.widget.CustomSwipeToRefresh
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:id="@+id/frame_container"
+					android:layout_alignParentBottom="true"
+					android:layout_alignParentTop="true"/>
+			<TextView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:visibility="gone"
+					tools:visibility="visible"
+					android:text="@string/loading_text"
+					android:id="@+id/toast_text_view" android:gravity="center_horizontal"
+					android:background="@color/accent_transparent" android:textColor="#FFFFFF"/>
+		</RelativeLayout>
+		<fragment
+				android:layout_width="240dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="start"
+				android:name="com.gongshw.plan.android.fragment.DrawerFragment" android:id="@+id/fragment_drawer"
+				tools:layout="@layout/fragment_drawer"/>
+	</android.support.v4.widget.DrawerLayout>
+
+</com.gongshw.plan.android.widget.VirtualKeyboardMeasureLayout>

@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:theme="@style/AppTheme"
+             android:id="@+id/container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             tools:context=".PlanActivity"
+             tools:ignore="MergeRootFrame">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	                xmlns:tools="http://schemas.android.com/tools"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:paddingLeft="0dp"
+	                android:paddingRight="0dp"
+	                android:paddingTop="0dp"
+	                android:paddingBottom="0dp"
+	                tools:context=".PlanActivity$PlaceholderFragment" android:layout_marginTop="0dp">
+
+		<fragment android:layout_width="wrap_content" android:layout_height="wrap_content"
+		          android:id="@+id/fragment_plan_list"
+		          android:name="com.gongshw.plan.android.fragment.PlanListFragment"
+		          tools:layout="@layout/fragment_active_plans" android:layout_alignParentTop="true"
+		          android:layout_above="@+id/fragment_plan_adder"/>
+		<fragment android:layout_width="fill_parent" android:layout_height="wrap_content"
+		          android:name="com.gongshw.plan.android.fragment.PlanAdderFragment"
+		          android:layout_alignParentBottom="true"
+		          android:id="@+id/fragment_plan_adder"
+		          android:layout_centerHorizontal="true" tools:layout="@layout/fragment_plan_adder"/>
+	</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="primary">#F3B60C</color>
+	<color name="primary_dark">#E59900</color>
+	<color name="accent">#5E5E5E</color>
+	<color name="accent_transparent">#885E5E5E</color>
+
+	<color name="plan_null">#E0E0E0</color>
+	<color name="plan_red">#FF6D3F</color>
+	<color name="plan_orange">#FF9700</color>
+	<color name="plan_yellow">#FFE900</color>
+	<color name="plan_grey">#B7C3C9</color>
+	<color name="plan_blue">#3FC3FE</color>
+	<color name="plan_cyan">#1CE8B5</color>
+	<color name="plan_green">#8AC249</color>
+
+</resources>
